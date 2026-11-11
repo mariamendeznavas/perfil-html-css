@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Ejercicio2.css">
+    <title>Web Personal María Méndez</title>
+</head>
+<body>
+    <div class="contenedor">
+
+        <!--HEADER/CABECERA Etiqueta semántica -->
+        <header>
+            <h1>María Méndez</h1>
+            <p>Desarrolladora Web Frontend</p>
+        </header>
+
+        <!--NAV/NAVEGACION Etiqueta semántica-->
+        <nav>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#estudios">Estudios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#aficiones">Aficiones</a>
+        </nav>
+
+        <!--MAIN/CONTENIDO PRINCIPAL) Etiqueta semántica-->
+        <main>
+
+            <!-- SECTION/SECCIÓN SOBRE MI Etiqqueta semántica-->
+            <section id="sobre-mi" class="clearfix">
+                <h2>Sobre Mí</h2>
+                
+                <!--Fotografía -->
+                <img id="perfil-img" 
+                     src="Fotoperfiltarea02.jpg" 
+                     alt="Fotografía de María Méndez">
+                
+                <p> Soy desarrolladora web con experiencia en empresas del sector más importantes. Estoy especializada en creación de aplicaciones web, usando principalmente React y Node.js. Me gusta aprender y tener continuos retos con los que crecer profesionalmente.</p>
+                <!-- Al usar 'float' en la imagen, el contenido de texto fluye a su alrededor. -->
+                <p>Soy una persona metódica, orientada a los detalles y proactiva. Me gusta ceñirme a las reglas de código limpio para dar solución a lor problemas planteados.</p>
+            </section>
+
+            <!--SECTION/SECCIÓN ESTUDIOS Etiqueta semántica-->
+            <section id="estudios">
+                <h2>Estudios y Formación</h2>
+                <!--Etiqueta semántica ARTICLE-->
+                <article>
+                    <h3>CGS Desarrollador de aplicaciones web</h3>
+                    <p>IES Maestre de Calatrava (Ciudad Real | 2025 - 2027</p>
+                </article>
+                <article>
+                    <h3>Curso Ciberseguridad google</h3>
+                    <p>Grow with Google | 2024</p>
+                </article>
+            </section>
+
+            <!--SECTION PROYECTOS/tabla Etiqueta Semántica -->
+            <section id="proyectos">
+                <h2>Proyectos Destacados</h2>
+                
+                <!--Tabla -->
+                <table>
+                    <!-- Cabecera tabla/thead -->
+                    <thead>
+                        <tr>
+                            <th>Proyecto</th>
+                            <th>Tecnologías</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
+                    <!--Cuerpo tabla/tbody -->
+                    <tbody>
+                        <tr>
+                            <td>Plataforma de E-learning</td>
+                            <td>React, Node.js, MongoDB</td>
+                            <td>Líder Frontend</td>
+                        </tr>
+                        <tr>
+                            <td>Sistema de Gestión de Stocks</td>
+                            <td>Express, PostgreSQL</td>
+                            <td>Full Stack</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!--SECTION/AFICCIONES-->
+            <section id="aficiones">
+                <h2>Aficiones</h2>
+                <p>
+                    Me gusta hacer deporte de competición, estoy en un equipo de voleyball en FVCM. También paso tiempo al aire libre para despejar la mente. También disfruto de la astrofotografía, sobre todo en invierno.
+                </p>
+                <!--Enlace externo -->
+                <p>
+                    Puedes ver algunas de mis astrofotografías en  
+                    <a href="https://astroava.org/astrofotografia/" target="_blank">el siguiente enlace: (Enlace Externo)</a>
+                </p>
+            </section>
+            
+        </main>
+
+        <!--FOOTER/ Pie de página Etiqueta semántica -->
+        <footer>
+            <p>Contacto: micorreoemail@email.com</p>
+            <p>&copy; 2025 María Méndez</p>
+        </footer>
+
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,92 @@
+  /*Estilos generales del cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif; /* Fuente sencilla */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /*Fondo gris para la pagina */
+            color: #333;
+        }
+        /*Estilos generales del contenedor principal */
+        .contenedor {
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto; /*Centrar en la pantalla */
+            background-color: #fff; /*Color del fondo del contenido */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/*Darle sombra a la caja del contenido*/
+        }
+        /* ETIQUETA SEMÁNTICA: HEADER */
+        header {
+            background-color: #007bff; /*Color del fondo de la cabecera María Méndez Navas Desarrolladora web frontend*/
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* ETIQUETA SEMÁNTICA: NAV */
+        nav {
+            background-color: #333; /*Colo del fondo Sobre mí, Estudios...*/
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            transition: background-color 0.3s;/*Transición suave al pasar por encima el rato que se ve con el siguiente estilo*/
+        }
+        nav a:hover {
+            background-color: #0056b3; /* "Aplica estos estilos solo cuando el ratón pasa por encima del elemento (<a>)".*/
+        }
+        /* ETIQUETA SEMÁNTICA: SECTION y MAIN */
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;/*hace que las esquinas sean curvas*/
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #ccc;/*subrayado debajo*/
+            padding-bottom: 5px;
+        }
+        /* Estilo para la IMAGEN de perfil (la hace circular y la flota) */
+        #perfil-img {
+            float: right; /* Flota la imagen a la derecha del texto, el contenedor padre (section) se queda sin altura rompiendo el diseño, de ahí que se use clearfix */
+            margin: 0 0 15px 15px;
+            border-radius: 50%; /*Borde circular */
+            width: 150px;
+            height: 150px;
+            object-fit: cover;/*Hace que la imagen adapte su contenido al espacio asignado como es el circulo, mantener las proporciones para que no se deforme, recortarla si sobra*/
+            border: 3px solid #007bff;
+        }
+        /* Estilos sencillos para la TABLA */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #e9ecef;
+            color: #333;
+        }
+        /* Estilo footer*/
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        /* Limpiador de flotantes (importante al usar 'float') Obliga a la sección a reconocer la altura de la imagen flotante, manteniendo el diseño*/
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
